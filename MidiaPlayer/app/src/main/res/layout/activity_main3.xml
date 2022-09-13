@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_fundo"
+    tools:context=".MainActivity3">
+
+    <Button
+        android:id="@+id/btnMusica5"
+        android:layout_width="230dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/shape_border"
+        android:onClick="Musica2"
+        android:text="My Universe"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMusica4" />
+
+    <Button
+        android:id="@+id/btnMusica6"
+        android:layout_width="230dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_border"
+        android:onClick="Musica3"
+        android:text="Yellow"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMusica5" />
+
+    <Button
+        android:id="@+id/btnMusica4"
+        android:layout_width="228dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/shape_border"
+        android:onClick="Musica1"
+        android:text="Clocks"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPlay3" />
+
+    <SeekBar
+        android:id="@+id/barVolume3"
+        style="@android:style/Widget.Material.Light.SeekBar"
+        android:layout_width="244dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="16dp"
+        android:max="10"
+        android:progress="5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:tickMarkTint="@null" />
+
+    <Button
+        android:id="@+id/btnPlay3"
+        android:layout_width="65dp"
+        android:layout_height="66dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/play"
+        android:onClick="Play"
+        app:backgroundTint="@null"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnPause3"
+        app:layout_constraintEnd_toStartOf="@+id/btnStop3" />
+
+    <Button
+        android:id="@+id/btnPause3"
+        android:layout_width="80dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/pause"
+        android:onClick="Pause"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toStartOf="@+id/btnPlay3"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barVolume3" />
+
+    <Button
+        android:id="@+id/btnStop3"
+        android:layout_width="51dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="96dp"
+        android:background="@drawable/stop"
+        android:onClick="Stop"
+        app:backgroundTint="@null"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnPlay3"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="369dp"
+        android:layout_height="272dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/categoria2" />
+
+    <Button
+        android:id="@+id/btnVoltar3"
+        android:layout_width="169dp"
+        android:layout_height="49dp"
+        android:background="@drawable/shape_border"
+        android:onClick="VoltarTela"
+        android:text="Voltar"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMusica6"
+        app:layout_constraintVertical_bias="0.724" />
+</androidx.constraintlayout.widget.ConstraintLayout>

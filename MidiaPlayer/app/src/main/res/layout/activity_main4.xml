@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_fundo"
+    tools:context=".MainActivity4">
+
+    <Button
+        android:id="@+id/btnMusica9"
+        android:layout_width="230dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_border"
+        android:onClick="Musica3"
+        android:text="What the hell"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMusica8" />
+
+    <Button
+        android:id="@+id/btnMusica7"
+        android:layout_width="228dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_border"
+        android:onClick="Musica1"
+        android:text="Girlfriend"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPause4" />
+
+    <Button
+        android:id="@+id/btnMusica8"
+        android:layout_width="230dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_border"
+        android:onClick="Musica2"
+        android:text="Im with you"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMusica7" />
+
+    <Button
+        android:id="@+id/btnPause4"
+        android:layout_width="80dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/pause"
+        android:onClick="Pause"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toStartOf="@+id/btnPlay4"
+        app:layout_constraintHorizontal_bias="0.957"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barVolume4" />
+
+    <Button
+        android:id="@+id/btnPlay4"
+        android:layout_width="65dp"
+        android:layout_height="66dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/play"
+        android:onClick="Play"
+        app:backgroundTint="@null"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnPause4"
+        app:layout_constraintEnd_toStartOf="@+id/btnStop4" />
+
+    <Button
+        android:id="@+id/btnStop4"
+        android:layout_width="51dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="100dp"
+        android:background="@drawable/stop"
+        android:onClick="Stop"
+        app:backgroundTint="@null"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnPlay4"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <SeekBar
+        android:id="@+id/barVolume4"
+        style="@android:style/Widget.Material.Light.SeekBar"
+        android:layout_width="244dp"
+        android:layout_height="39dp"
+        android:max="10"
+        android:progress="5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:tickMarkTint="@null" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="369dp"
+        android:layout_height="290dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/categoria3" />
+
+    <Button
+        android:id="@+id/btnVoltar4"
+        android:layout_width="169dp"
+        android:layout_height="49dp"
+        android:background="@drawable/shape_border"
+        android:onClick="VoltarTela"
+        android:text="Voltar"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMusica9"
+        app:layout_constraintVertical_bias="0.619" />
+</androidx.constraintlayout.widget.ConstraintLayout>
